@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['txtarea']) && !empty($_POST['txtarea'])){
 $string = $_POST['txtarea'];
-$find = array('fuck','suck');
+$find = array('suck','fuck');
 $replace = array('****','****');
 $new_str = str_ireplace($find,$replace,$string);
 echo $new_str;
